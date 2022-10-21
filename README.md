@@ -53,10 +53,10 @@ CM env into local temp folders. **PS Script will install Qlik-Cli if not already
 |`$adminEmail=`              |“\<Admin email>"||
 |`$adminGroups=`              |"Domain Users“|If you don’t use Groups, please leave Domain Users as default|
 
-	> Now execute **2_SaaS__ExportUsers.ps1**
+> Now execute **2_SaaS__ExportUsers.ps1**
 
 #### This script will do the following:
-	> Create **SaaS_UsersDatabase.csv** file, with complete list of current Saas users
+> Create **SaaS_UsersDatabase.csv** file, with complete list of current Saas users
 
 #### Admin now needs to merge user file content between
 >**CM_UsersDatabase.csv** and  **SaaS_UsersDatabase.csv**
