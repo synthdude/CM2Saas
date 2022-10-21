@@ -12,10 +12,6 @@ Content is made available as-is, and builds on documented tools and features pro
 
 This section will attemt to export all content and objects, published on unpublished, from your Qlik Sense in Windows installation into folder(s) on your server locally.
 
-- Generate **Certificate**
-	> https://help.qlik.com/en-US/sense-admin/August2022/Subsystems/DeployAdministerQSE/Content/Sense_DeployAdminister/QSEoW/Administer_QSEoW/Managing_QSEoW/export-certificates.htm
-
-- You will need to install **Certificate** into current user/personal certificates
 - Put provided .ps1 scripts files into a folder on CM Qlik Sense server locally
 - Open **PowerShell ISE** with Admin privileges
 - Open/Run **1_CM_ExportAll.ps1** script to export all content from  
