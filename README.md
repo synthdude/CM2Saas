@@ -51,7 +51,7 @@ CM env into local temp folders. **PS Script will install Qlik-Cli if not already
 |`$pfxPass=`              |“\<PFX password>"||
 |`$iss=`                   |“\<TENANT ID>.eu.qlikcloud.com"||
 |`$kid=`                   |“\<Key ID from **Setup JWT** step above>"||
-|`$adminSubject=`          |"auth0\|****************c4481cda860b8526bdaf3752f2a552b3ea4f4549293241fc“|IDP Subject for Admin User from Users list in QMC|
+|`$adminSubject=`          |"auth0\|****************c4481cda860b8526bdaf3241fc“|IDP Subject for Admin User from Users list in QMC|
 |`$adminName=`              |“\<Admin Name>"||
 |`$adminEmail=`              |“\<Admin email>"||
 |`$adminGroups=`              |"Domain Users“|If you don’t use Groups, please leave Domain Users as default|
