@@ -52,7 +52,7 @@ CM env into local temp folders. **PS Script will install Qlik-Cli if not already
 |Parameter                |Value                 | Comment |
 |-------------------------|-----------------------------|----------|
 |`$tenantURL=`            |'"https://\<TENANT ID>.eu.qlikcloud.com"'  ||
-|`$pathToPFX=`            |"$(Get-Location)\certificates\text2.pfx"   ||
+|`$pathToPFX=`            |"$(Get-Location)\certificates\text2.pfx"   |Use your converted .PFX file here|
 |`$pfxPass=`              |“\<PFX password>"||
 |`$iss=`                   |“\<TENANT ID>.eu.qlikcloud.com"||
 |`$kid=`                   |“\<Key ID from **Setup JWT** step above>"||
