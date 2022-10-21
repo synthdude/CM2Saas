@@ -32,3 +32,27 @@ CM env into local temp folders. **PS Script will install Qlik-Cli if not already
 	>Reverts private objects (step .3) **back to private status**
 
 	>Exports Apps from personal ”My Work stream”
+
+# Step 2, User mapping - prepare
+
+- **Setup JWT** auth in OEM licensed QS Saas tenant (1st one)
+> [Qlik Help link](https://qlik.dev/tutorials/create-signed-tokens-for-jwt-authorization)
+
+- Admin needs to manually **invite users** of choice to tenant
+> [Qlik Help link](https://help.qlik.com/en-US/cloud-services/Subsystems/Hub/Content/Sense_Hub/Admin/SaaS-invite-users.htm#anchor-2)
+
+-Please prepare **2_SaaS__ExportUsers.ps1** file with Admin/tenant details before continuing.
+
+## Tenant Admin details
+
+|Parameter                |Value                 | Comment |
+|-------------------------|-----------------------------|----------|
+|`$tenantURL=`            |'"https://\<TENANT ID>.eu.qlikcloud.com"'  ||
+|`$pathToPFX=`            |"$(Get-Location)\certificates\text2.pfx"   ||
+|`$pfxPass=`              |“\<PFX password>"||
+|`$iss=`                   |“\<TENANT ID>.eu.qlikcloud.com"||
+|`$kid=`                   |“\<Key ID from **Setup JWT** step above>"||
+|`$adminSubject=`          |"auth0\|****************c4481cda860b8526bdaf3752f2a552b3ea4f4549293241fc“|IDP Subject for Admin User from Users list in QMC|
+|`$adminName=`              |“\<Admin Name>"||
+|`$adminEmail=`              |“\<Admin email>"||
+|`$adminGroups=`              |"Domain Users“|If you don’t use Groups, please leave Domain Users as default|
