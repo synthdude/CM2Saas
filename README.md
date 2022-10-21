@@ -37,6 +37,9 @@ CM env into local temp folders. **PS Script will install Qlik-Cli if not already
 - **Setup JWT** auth in OEM licensed QS Saas tenant (1st one)
 	> https://qlik.dev/tutorials/create-signed-tokens-for-jwt-authorization
 
+- Create a CM certificates **.PFX** file using 
+	> openssl pkcs12 -inkey bob_key.pem -in bob_cert.cert -export -out bob_pfx.pfx
+
 - Admin needs to manually **invite users** of choice to tenant
 	> https://help.qlik.com/en-US/cloud-services/Subsystems/Hub/Content/Sense_Hub/Admin/SaaS-invite-users.htm#anchor-2
 
