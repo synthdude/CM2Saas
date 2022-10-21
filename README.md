@@ -40,6 +40,8 @@ CM env into local temp folders. **PS Script will install Qlik-Cli if not already
 - Convert .pem and .cer certificates into **.PFX** file using 
 	> `openssl pkcs12 -inkey bob_key.pem -in bob_cert.cert -export -out bob_pfx.pfx`
 
+	> Store **.PFX** file into a **\certificates\** subfolder to the project
+
 - Admin needs to manually **invite users** of choice to tenant
 	> https://help.qlik.com/en-US/cloud-services/Subsystems/Hub/Content/Sense_Hub/Admin/SaaS-invite-users.htm#anchor-2
 
