@@ -86,3 +86,7 @@ CM env into local temp folders. **PS Script will install Qlik-Cli if not already
 	>Import all Apps exported in **Step 1**, into Shared Spaces
 
 	>Run a **User Context impersonation Loop**, that will Unpublish / return ownership of Objects that belong to this User
+
+
+Authors: Simon Matele & Simon Astakhov
+OEM EMEA Presales Team at Qlik
