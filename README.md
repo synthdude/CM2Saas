@@ -89,6 +89,6 @@ CM env into local temp folders. **PS Script will install Qlik-Cli if not already
 
 
 > Authors: Simon Matele & Simon Astakhov
--[] OEM EMEA Presales Team at Qlik 
+> -[] OEM EMEA Presales Team at Qlik 
 > 
 > [www.qlik.com](https://www.qlik.com)
