@@ -29,6 +29,9 @@ CM env into local temp folders. **PS Script will install Qlik-Cli if not already
 
 	>Exports Apps from personal ”My Work stream”
 
+
+
+
 # Step 2, User mapping - prepare
 
 - **Setup JWT** auth in OEM licensed QS Saas tenant (1st one)
@@ -61,7 +64,10 @@ CM env into local temp folders. **PS Script will install Qlik-Cli if not already
 #### Admin now needs to merge user file content between
 >**CM_UsersDatabase.csv** and  **SaaS_UsersDatabase.csv**
 >The result should look like example file ”Mapping.csv”
->
+
+
+
+
 
 # Step 3, import CM content into Saas tenant
 
