@@ -32,10 +32,10 @@ CM env into local temp folders. **PS Script will install Qlik-Cli if not already
 # Step 2, User mapping - prepare
 
 - **Setup JWT** auth in OEM licensed QS Saas tenant (1st one)
-> [Qlik Help link](https://qlik.dev/tutorials/create-signed-tokens-for-jwt-authorization)
+> https://qlik.dev/tutorials/create-signed-tokens-for-jwt-authorization
 
 - Admin needs to manually **invite users** of choice to tenant
-> [Qlik Help link](https://help.qlik.com/en-US/cloud-services/Subsystems/Hub/Content/Sense_Hub/Admin/SaaS-invite-users.htm#anchor-2)
+> https://help.qlik.com/en-US/cloud-services/Subsystems/Hub/Content/Sense_Hub/Admin/SaaS-invite-users.htm#anchor-2
 
 - Please prepare **2_SaaS__ExportUsers.ps1** file with Admin/tenant details before continuing.
 
