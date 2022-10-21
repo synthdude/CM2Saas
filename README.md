@@ -3,7 +3,7 @@
 
 # Introduction
 
-Migration of Qlik Sense content from Client Managed Qlik Sense on Windows (CM), to a Qlik Sense Saas tenant
+Migration of Qlik Sense content from Client Managed Qlik Sense on Windows (CM), to a Qlik Sense Saas tenant can be a very time-consuming and laborous task, as well as error prone. We aim to greatly simplify this movement of content, by leveraging the powerful Qlik-Cli command-line tool.  
 
 This document is aimed towards a Qlik Sense Saas Tenant admin, that seeks to automate the process of migrating content from CM (Client Managed QSE on Windows), to QSE Saas.
 
