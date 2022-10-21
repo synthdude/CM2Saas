@@ -11,7 +11,7 @@ Content is made available as-is, and builds on documented tools and features pro
 
 # Step 1, export
 
-This section will attemt to export all content and objects, published on unpublished, from your Qlik Sense in Windows installation into folder(s) on your server locally.
+This section will attempt to export all content and objects, published on unpublished, from your Qlik Sense in Windows installation into folder(s) on your server locally.
 
 - Put provided .ps1 scripts files into a folder on CM Qlik Sense server locally
 - Open **PowerShell ISE** with Admin privileges
