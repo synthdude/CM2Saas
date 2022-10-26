@@ -32,8 +32,10 @@ The following is executed by this script:
 *Setup JWT* auth in OEM licensed QS Saas tenant (1st one)
 - https://qlik.dev/tutorials/create-signed-tokens-for-jwt-authorization
 
-Convert .pem and .cer certificates into *.PFX* file using 
-- `openssl pkcs12 -inkey bob_key.pem -in bob_cert.cert -export -out bob_pfx.pfx`
+Convert .pem and .cer certificates into *.PFX* file using
+```
+openssl pkcs12 -inkey bob_key.pem -in bob_cert.cert -export -out bob_pfx.pfx
+```
 - Store *.PFX* file into a *"\certificates\"* subfolder to the project
 
 Admin needs to manually *invite users* of choice to tenant
@@ -70,12 +72,12 @@ Create *SaaS_UsersDatabase.csv* file, with complete list of current Saas users
 
 ## Step 3, import CM content into Saas tenant
 
-- Open / edit **3_SaaS__ImportAll.ps1**
+- Open / edit **3_aaS__ImportAll.ps1*
 
 - Input the same details/credentials as in **Step 2/Tenant details** on the previous page
 
 This script will do the following:
-- Logon current session as tenant Admin context using **JWT**
+- Logon current session as tenant Admin context using *JWT*
 - Create Saas *Shared Spaces* equal to *CM Streams*
 - Import all Apps exported in *Step 1*, into Shared Spaces
 - Run a *User Context impersonation Loop*, that will Unpublish / return ownership of Objects that belong to this User
