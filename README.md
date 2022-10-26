@@ -49,6 +49,8 @@ Please prepare *2_SaaS__ExportUsers.ps1* file with Admin/tenant details before c
 
 ## Tenant Admin details
 
+![image](https://github.com/synthdude/CM2Saas/blob/main/Clipboard99.jpg)
+
 |Parameter                |Value                 | Comment |
 |-------------------------|-----------------------------|----------|
 |`$tenantURL=`            |'"https://`<TENANT ID>`.eu.qlikcloud.com"'  ||
