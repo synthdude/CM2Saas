@@ -72,7 +72,7 @@ Create *SaaS_UsersDatabase.csv* file, with complete list of current Saas users
 
 ## Step 3, import CM content into Saas tenant
 
-- Open / edit **3_aaS__ImportAll.ps1*
+- Open / edit *3_aaS__ImportAll.ps1*
 
 - Input the same details/credentials as in *Step 2/Tenant details* on the previous page
 
@@ -83,7 +83,7 @@ This script will do the following:
 - Run a *User Context impersonation Loop*, that will Unpublish / return ownership of Objects that belong to this User
 
 ```
-> Authors: Simon Matele & Simon Astakhov
-> OEM EMEA Presales Team at Qlik 
-> [www.qlik.com](https://www.qlik.com)
+Authors: Simon Matele & Simon Astakhov
+OEM EMEA Presales Team at Qlik 
+https://www.qlik.com
 ```
