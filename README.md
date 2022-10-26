@@ -2,11 +2,11 @@
 
 Migration of Qlik Sense content from Client Managed Qlik Sense on Windows (CM), to a Qlik Sense Saas tenant can be a very time-consuming and laborous task, as well as error prone. We aim to greatly simplify this movement of content, by leveraging the powerful Qlik-Cli command-line tool.  
 
-This document is aimed towards a Qlik Sense Saas **Tenant admin**, that seeks to automate the process of migrating content from CM (Client Managed QSE on Windows), to QSE Saas.
+This document is aimed towards a Qlik Sense Saas *Tenant admin*, that seeks to automate the process of migrating content from CM (Client Managed QSE on Windows), to QSE Saas.
 
 Content is made available as-is, and builds on documented tools and features provided by Qlik.
 
-# Step 1, export
+## Step 1, export
 
 This section will attempt to export all content and objects, published on unpublished, from your Qlik Sense in Windows installation into folder(s) on your server locally.
 
@@ -27,7 +27,7 @@ The following is executed by this script:
 
 
 
-# Step 2, User mapping - prepare
+## Step 2, User mapping - prepare
 
 *Setup JWT* auth in OEM licensed QS Saas tenant (1st one)
 - https://qlik.dev/tutorials/create-signed-tokens-for-jwt-authorization
@@ -36,7 +36,7 @@ Convert .pem and .cer certificates into *.PFX* file using
 - `openssl pkcs12 -inkey bob_key.pem -in bob_cert.cert -export -out bob_pfx.pfx`
 - Store *.PFX* file into a *"\certificates\"* subfolder to the project
 
-Admin needs to manually **invite users** of choice to tenant
+Admin needs to manually *invite users* of choice to tenant
 - https://help.qlik.com/en-US/cloud-services/Subsystems/Hub/Content/Sense_Hub/Admin/SaaS-invite-users.htm#anchor-2
 
 Please prepare *2_SaaS__ExportUsers.ps1* file with Admin/tenant details before continuing.
@@ -49,7 +49,7 @@ Please prepare *2_SaaS__ExportUsers.ps1* file with Admin/tenant details before c
 |`$pathToPFX=`            |"$(Get-Location)\certificates\text2.pfx"   |Use your converted .PFX file here|
 |`$pfxPass=`              |“\<PFX password>"||
 |`$iss=`                   |“\<TENANT ID>.eu.qlikcloud.com"||
-|`$kid=`                   |“\<Key ID from **Setup JWT** step above>"||
+|`$kid=`                   |“\<Key ID from *Setup JWT* step above>"||
 |`$adminSubject=`          |"auth0\|****************c4481cda860b8526bdaf3241fc“|IDP Subject for Admin User from Users list in QMC|
 |`$adminName=`              |“\<Admin Name>"||
 |`$adminEmail=`              |“\<Admin email>"||
@@ -68,7 +68,7 @@ Create *SaaS_UsersDatabase.csv* file, with complete list of current Saas users
 
 
 
-# Step 3, import CM content into Saas tenant
+## Step 3, import CM content into Saas tenant
 
 - Open / edit **3_SaaS__ImportAll.ps1**
 
