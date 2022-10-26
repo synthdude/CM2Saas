@@ -52,18 +52,6 @@ Please prepare *2_SaaS__ExportUsers.ps1* file with Admin/tenant details before c
 ![image](https://user-images.githubusercontent.com/28060254/198076521-8d6c7e3d-f30f-40b5-b28c-a8f7c78b1a54.png)
 
 
-|Parameter                |Value                 | Comment |
-|-------------------------|-----------------------------|----------|
-|`$tenantURL=`            |'"https://`<TENANT ID>`.eu.qlikcloud.com"'  ||
-|`$pathToPFX=`            |"$(Get-Location)\certificates\text2.pfx"   |Use your converted .PFX file here|
-|`$pfxPass=`              |“`<PFX password>`"||
-|`$iss=`                   |“`<TENANT ID>`.eu.qlikcloud.com"||
-|`$kid=`                   |“`<Key ID` from *Setup JWT* step above>"||
-|`$adminSubject=`          |"auth0|****************c4481cda860b8526bdaf3241fc“|IDP Subject for Admin User from Users list in QMC|
-|`$adminName=`              |“`<Admin Name>`"||
-|`$adminEmail=`              |“`<Admin email>`"||
-|`$adminGroups=`              |"Domain Users“|If you don’t use Groups, please leave Domain Users as default|
-
 Now execute *2_SaaS__ExportUsers.ps1*
 
 #### This script will do the following:
