@@ -14,25 +14,22 @@ This section will attempt to export all content and objects, published on unpubl
 - Open **PowerShell ISE** with Admin privileges
 - Open/Run **1_CM_ExportAll.ps1** script to export all content from  
 CM env into local temp folders. **PS Script will install Qlik-Cli if not already installed.**
-- The following is executed by this script:
-	> Creates Data folder and creates” \DATA\CM_UsersDatabase.csv” file
-	
-	> Loops through all Streams / Apps / Objects
-	
-	> The code Publishes / Approves all **private** Objects
-	
-	>Export Apps with full list of objects
 
-	>Reverts private objects (step .3) **back to private status**
 
-	>Exports Apps from personal ”My Work stream”
+The following is executed by this script:
+- Creates Data folder and creates” \DATA\CM_UsersDatabase.csv” file
+- Loops through all Streams / Apps / Objects
+- The code Publishes / Approves all **private** Objects
+- Export Apps with full list of objects
+- Reverts private objects (step .3) **back to private status**
+- Exports Apps from personal ”My Work stream”
 
 
 
 
 # Step 2, User mapping - prepare
 
-- **Setup JWT** auth in OEM licensed QS Saas tenant (1st one)
+- *Setup JWT* auth in OEM licensed QS Saas tenant (1st one)
 	> https://qlik.dev/tutorials/create-signed-tokens-for-jwt-authorization
 
 - Convert .pem and .cer certificates into **.PFX** file using 
