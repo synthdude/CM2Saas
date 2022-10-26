@@ -74,7 +74,7 @@ Create *SaaS_UsersDatabase.csv* file, with complete list of current Saas users
 
 - Open / edit **3_aaS__ImportAll.ps1*
 
-- Input the same details/credentials as in **Step 2/Tenant details** on the previous page
+- Input the same details/credentials as in *Step 2/Tenant details* on the previous page
 
 This script will do the following:
 - Logon current session as tenant Admin context using *JWT*
@@ -82,7 +82,8 @@ This script will do the following:
 - Import all Apps exported in *Step 1*, into Shared Spaces
 - Run a *User Context impersonation Loop*, that will Unpublish / return ownership of Objects that belong to this User
 
-
+```
 > Authors: Simon Matele & Simon Astakhov
 > OEM EMEA Presales Team at Qlik 
 > [www.qlik.com](https://www.qlik.com)
+```
