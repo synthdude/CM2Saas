@@ -49,7 +49,8 @@ Please prepare *2_SaaS__ExportUsers.ps1* file with Admin/tenant details before c
 
 ## Tenant Admin details
 
-![image](https://github.com/synthdude/CM2Saas/blob/main/Clipboard99.jpg)
+![image](https://user-images.githubusercontent.com/28060254/198076521-8d6c7e3d-f30f-40b5-b28c-a8f7c78b1a54.png)
+
 
 |Parameter                |Value                 | Comment |
 |-------------------------|-----------------------------|----------|
