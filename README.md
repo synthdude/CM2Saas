@@ -3,7 +3,7 @@
 This document is aimed towards a Qlik Sense Saas Tenant admin, that seeks to automate the process of migrating content from CM (Client Managed QSE on Windows), to QSE Saas.
 Content is made available as-is, and builds on documented tools and features provided by Qlik.
 Make sure the Qlik SaaS license has the number of users plus one you want to move private objects for. This tool doesn’t included distribution of content across multiple target tenants, but it can be changed to do so.
-The script can be downloaded from: https://github.com/synthdude/CM2Saas/
+The script can be downloaded from: [The github repo of this migration tool](https://github.com/synthdude/CM2Saas/)
 
 
 ## Step 1, export
