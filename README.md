@@ -1,5 +1,3 @@
-# Introduction
-
 This document is aimed towards a Qlik Sense Saas Tenant admin, that seeks to automate the process of migrating content from CM (Client Managed QSE on Windows), to QSE Saas.
 
 # Prerequisites
