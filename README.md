@@ -1,15 +1,15 @@
-## Introduction
+# Introduction
 
 This document is aimed towards a Qlik Sense Saas Tenant admin, that seeks to automate the process of migrating content from CM (Client Managed QSE on Windows), to QSE Saas.
 
-### Prerequisites
+# Prerequisites
 * *License*: Make sure the Qlik SaaS license has the number of users plus one you want to move private objects for. 
 * *multitenancy*: This tool doesn’t included distribution of content across multiple target tenants, but it can be changed to do so. So with the currently release you can migrate from 1 CM site to 1 Qlik Cloud tenant.
 * *Script and Github*: The script can be downloaded from: [The github repo of this migration tool](https://github.com/synthdude/CM2Saas/)
 
 Note: Content is made available as-is, and builds on documented tools and features provided by Qlik.
 
-## Step 1, export
+# Step 1, export
 
 This section will attempt to export all content and objects, published on unpublished, from your Qlik Sense in Windows installation into folder(s) on your server locally.
 
@@ -46,17 +46,17 @@ Admin needs to manually *invite users* of choice to tenant
 
 Please prepare *2_SaaS__ExportUsers.ps1* file with Admin/tenant details before continuing.
 
-## Tenant Admin details
+### Tenant Admin details
 
 ![image](https://user-images.githubusercontent.com/28060254/198076521-8d6c7e3d-f30f-40b5-b28c-a8f7c78b1a54.png)
 
 
 Now execute *2_SaaS__ExportUsers.ps1*
 
-#### This script will do the following:
+### This script will do the following:
 Create *SaaS_UsersDatabase.csv* file, with complete list of current Saas users
 
-#### Admin now needs to merge user file content between
+### Admin now needs to merge user file content between
 *CM_UsersDatabase.csv* and  *SaaS_UsersDatabase.csv*
 - The result should look like example file ”Mapping.csv”
 
