@@ -1,4 +1,3 @@
-# Introduction
 Migration of Qlik Sense content from Client Managed Qlik Sense (CM), to a Qlik Sense Enterprise SaaS tenant can be a very time-consuming and laborious task, as well as error prone. We aim to simplify this movement of content, by leveraging the powerful Qlik-Cli command-line tool.
 Apps and app objects (sheets, stories and bookmarks), including private content in the app will be moved.
 
