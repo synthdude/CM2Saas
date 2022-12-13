@@ -38,7 +38,7 @@ The following is executed by this script:
 
 Convert .pem and .cer certificates into *.PFX* file using
 ```
-openssl pkcs12 -inkey bob_key.pem -in bob_cert.cer -export -out bob_pfx.pfx
+openssl pkcs12 -inkey privatekey.pem -in publickey.cer -export -out bob_pfx.pfx
 ```
 - Store *.PFX* file into a *"\certificates\"* subfolder to the project
 
