@@ -8,7 +8,7 @@ This document is aimed towards a Qlik Sense Saas Tenant admin, that seeks to aut
 * *Environment*: This tool should be run locally on the Qlik Sense Server machine using an administrative account. Alternatively this tool can be run from another computer, but then Qlik Sense Server certificates needs to be exported and imported/installed into cert store with "Friendly Name" as "QlikClient".
 * *multitenancy*: This tool doesn’t included distribution of content across multiple target tenants, but it can be changed to do so. So with the currently release you can migrate from 1 CM site to 1 Qlik Cloud tenant.
 * *Script and Github*: The script can be downloaded from: [The github repo of this migration tool](https://github.com/synthdude/CM2Saas/)
-* *Stream Names*: Please check that no Streams on QLik Sense Server contains single quotes [ ' ].
+* *Stream Names*: Please check that no Streams on Qlik Sense Server contains single quotes [ ' ].
 
 Note: Content is made available as-is, and builds on documented tools and features provided by Qlik.
 
