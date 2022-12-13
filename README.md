@@ -2,8 +2,8 @@ This document is aimed towards a Qlik Sense Saas Tenant admin, that seeks to aut
 
 # Prerequisites
 * *License*: Make sure the Qlik SaaS license has the number of users plus one you want to move private objects for. Similarly, it is assumed that both environments has the same amount of entitlements in Analyzer / Professional. If that is not the case, non-mapped sheets will turn up as Public sheets.
-* *Qlik-CLI*: Please install Qlik-CLI from here (https://github.com/ahaydon/Qlik-Cli-Windows)
-* *PowerShell*: Please make sure that Powershell version used is v7, otherwise install PS v7.
+* *Qlik-CLI*: Please install Qlik-CLI from here (https://www.nuget.org/packages/qlik-cli)
+* *PowerShell*: Please make sure that PS version used is PowerShell 5.1+ (7.3 recommended): (https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.3).
 * *Open SSL*: Please install Open SSL to be able to create .pfx certs from here (https://slproweb.com/products/Win32OpenSSL.html).
 * *Environment*: This tool should be run locally on the Qlik Sense Server machine using an administrative account. Alternatively this tool can be run from another computer, but then Qlik Sense Server certificates needs to be exported and imported/installed into cert store with "Friendly Name" as "QlikClient".
 * *multitenancy*: This tool doesn’t included distribution of content across multiple target tenants, but it can be changed to do so. So with the currently release you can migrate from 1 CM site to 1 Qlik Cloud tenant.
