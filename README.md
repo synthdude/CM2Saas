@@ -1,7 +1,7 @@
 This document is aimed towards a Qlik Sense Saas Tenant admin, that seeks to automate the process of migrating content from CM (Client Managed QSE on Windows), to QSE Saas.
 
 # Prerequisites
-* *License*: Make sure the Qlik SaaS license has the number of users plus one you want to move private objects for.
+* *License*: Make sure the Qlik SaaS license has the number of users plus one you want to move private objects for. Similarly, it is assumed that both environments has the same amount of entitlements in Analyzer / Professional. If that is not the case, non-mapped sheets will turn up as Public sheets.
 * *Qlik-CLI*: Please install Qlik-CLI from here (https://github.com/ahaydon/Qlik-Cli-Windows)
 * *PowerShell*: Please make sure that Powershell version used is v7, otherwise install PS v7.
 * *Open SSL*: Please install Open SSL to be able to create .pfx certs from here (https://slproweb.com/products/Win32OpenSSL.html).
