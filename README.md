@@ -5,7 +5,7 @@ This document is aimed towards a Qlik Sense Saas Tenant admin, that seeks to aut
 * *Qlik-CLI*: Please install Qlik-CLI from here (https://www.nuget.org/packages/qlik-cli)
 * *PowerShell*: Please make sure that PS version used is PowerShell 7.3+ (https://github.com/PowerShell/PowerShell).
 * *Open SSL*: Please install Open SSL to be able to create .pfx certs from here (https://slproweb.com/products/Win32OpenSSL.html).
-* *Environment*: This tool should be run locally on the Qlik Sense Server machine using an administrative account, i.e log in to the QS server with the Services account that runs the QS services on Windows. Alternatively this tool can be run from another computer, but then Qlik Sense Server certificates needs to be exported and imported/installed into cert store with "Friendly Name" as "QlikClient".
+* *Environment*: This tool should be run locally on the Qlik Sense Server machine using an administrative account, i.e log in to the QS server with the Services account that runs the QS services on Windows, as certificates will be installed into this account´s personal certificate store. Alternatively this tool can be run from another computer, but then Qlik Sense Server certificates needs to be exported and imported/installed into cert store with "Friendly Name" as "QlikClient".
 * *multitenancy*: This tool doesn’t included distribution of content across multiple target tenants, but it can be changed to do so. So with the currently release you can migrate from 1 CM site to 1 Qlik Cloud tenant.
 * *Script and Github*: The script can be downloaded from: [The github repo of this migration tool](https://github.com/synthdude/CM2Saas/)
 * *Stream Names*: Please check that no Streams on Qlik Sense Server contains single quotes [ ' ].
